@@ -1,0 +1,314 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "username/MoonFluid"
+
+// Values
+pub const ATMOSPHERIC_PRESSURE : Double = 101325.0
+
+pub const ATM_TO_PA : Double = 101325.0
+
+pub const BAR_TO_PA : Double = 100000.0
+
+pub const C_ORIFICE : Double = 0.61
+
+pub const C_PITOT : Double = 1.0
+
+pub const C_VENTURI : Double = 0.98
+
+pub const EPSILON : Double = 1.0e-10
+
+pub const EPSILON_CAST_IRON : Double = 0.00026
+
+pub const EPSILON_CAST_IRON_OLD : Double = 0.0015
+
+pub const EPSILON_CONCRETE : Double = 0.0003
+
+pub const EPSILON_SMOOTH : Double = 0.0
+
+pub const EPSILON_STEEL_NEW : Double = 0.000045
+
+pub const EPSILON_STEEL_OLD : Double = 0.0002
+
+pub const E_CONST : Double = 2.718281828459045
+
+pub const G : Double = 9.80665
+
+pub const K_BEND_45 : Double = 0.4
+
+pub const K_BEND_90 : Double = 0.9
+
+pub const K_INLET_ROUNDED : Double = 0.05
+
+pub const K_INLET_SHARP : Double = 0.5
+
+pub const K_OUTLET : Double = 1.0
+
+pub const K_SUDDEN_CONTRACTION_MAX : Double = 0.5
+
+pub const K_SUDDEN_EXPANSION_MAX : Double = 1.0
+
+pub const K_VALVE_HALF : Double = 4.0
+
+pub const K_VALVE_OPEN : Double = 0.2
+
+pub const K_WATER : Double = 2.2e9
+
+pub const LS_TO_M3S : Double = 0.001
+
+pub const M3H_TO_M3S : Double = 0.000277777777778
+
+pub const M3S_TO_LS : Double = 1000.0
+
+pub const MU_AIR_20C : Double = 1.81e-5
+
+pub const MU_WATER_20C : Double = 0.001002
+
+pub const NU_AIR_20C : Double = 1.51e-5
+
+pub const NU_WATER_20C : Double = 1.004e-6
+
+pub const N_MANNING_BRICK : Double = 0.015
+
+pub const N_MANNING_CONCRETE : Double = 0.013
+
+pub const N_MANNING_EARTH : Double = 0.025
+
+pub const N_MANNING_NATURAL : Double = 0.035
+
+pub const N_MANNING_SMOOTH_CONCRETE : Double = 0.012
+
+pub const N_MANNING_WEEDY : Double = 0.040
+
+pub const PI : Double = 3.141592653589793
+
+pub const PSI_TO_PA : Double = 6894.76
+
+pub const RE_CRITICAL_CHANNEL : Double = 500.0
+
+pub const RE_CRITICAL_PIPE : Double = 2300.0
+
+pub const RE_CRITICAL_PLATE : Double = 5.0e5
+
+pub const RHO_AIR : Double = 1.204
+
+pub const RHO_DIESEL : Double = 850.0
+
+pub const RHO_GASOLINE : Double = 750.0
+
+pub const RHO_MERCURY : Double = 13595.0
+
+pub const RHO_SEAWATER : Double = 1025.0
+
+pub const RHO_WATER : Double = 1000.0
+
+pub const SIGMA_WATER : Double = 0.0728
+
+pub fn abs(Double) -> Double
+
+pub fn approx_equal(Double, Double, Double) -> Bool
+
+pub fn area_from_flow_rate(Double, Double) -> Double
+
+pub fn array_max(Array[Double]) -> Double
+
+pub fn array_mean(Array[Double]) -> Double
+
+pub fn array_min(Array[Double]) -> Double
+
+pub fn array_sum(Array[Double]) -> Double
+
+pub fn bernoulli_pressure_drop(Double, Double, Double, Double, Double, Double) -> Double
+
+pub fn bernoulli_total_head(Double, Double, Double, Double, Double) -> Double
+
+pub fn bernoulli_total_head_std(Double, Double, Double, Double) -> Double
+
+pub fn bisection((Double) -> Double, Double, Double, Double) -> Double
+
+pub fn blasius_friction_factor(Double) -> Double
+
+pub fn boundary_layer_thickness_laminar(Double, Double) -> Double
+
+pub fn boundary_layer_thickness_turbulent(Double, Double) -> Double
+
+pub fn buoyant_force(Double, Double, Double) -> Double
+
+pub fn buoyant_force_std(Double, Double) -> Double
+
+pub fn cbrt(Double) -> Double
+
+pub fn circle_area(Double) -> Double
+
+pub fn circle_perimeter(Double) -> Double
+
+pub fn clamp(Double, Double, Double) -> Double
+
+pub fn colebrook_friction_factor_estimate(Double, Double, Double) -> Double
+
+pub fn critical_depth_rect(Double, Double) -> Double
+
+pub fn cube(Double) -> Double
+
+pub fn cylinder_drag_coefficient(Double) -> Double
+
+pub fn darcy_weisbach_head_loss(Double, Double, Double, Double, Double) -> Double
+
+pub fn darcy_weisbach_head_loss_std(Double, Double, Double, Double) -> Double
+
+pub fn darcy_weisbach_pressure_drop(Double, Double, Double, Double, Double) -> Double
+
+pub fn drag_force(Double, Double, Double, Double) -> Double
+
+pub fn euler_number(Double, Double, Double) -> Double
+
+pub fn flat_plate_friction_coefficient_laminar(Double) -> Double
+
+pub fn flat_plate_friction_coefficient_turbulent(Double) -> Double
+
+pub fn flow_regime(Double) -> String
+
+pub fn froude_dimensionless(Double, Double, Double) -> Double
+
+pub fn froude_number(Double, Double, Double) -> Double
+
+pub fn froude_similarity(Double, Double) -> Bool
+
+pub fn fully_rough_friction_factor(Double, Double) -> Double
+
+pub fn hydraulic_diameter(Double, Double) -> Double
+
+pub fn hydraulic_radius(Double, Double) -> Double
+
+pub fn hydraulic_radius_rect(Double, Double) -> Double
+
+pub fn hydraulic_radius_trapezoid(Double, Double, Double) -> Double
+
+pub fn hydrostatic_pressure(Double, Double, Double, Double) -> Double
+
+pub fn hydrostatic_pressure_std(Double, Double, Double) -> Double
+
+pub fn is_turbulent(Double, Double) -> Bool
+
+pub fn is_turbulent_pipe(Double) -> Bool
+
+pub fn is_zero(Double) -> Bool
+
+pub fn jet_force(Double, Double, Double) -> Double
+
+pub fn jet_force_angled(Double, Double, Double, Double) -> Double
+
+pub fn laminar_flow_rate(Double, Double, Double, Double) -> Double
+
+pub fn laminar_friction_factor(Double) -> Double
+
+pub fn laminar_max_velocity(Double, Double, Double, Double) -> Double
+
+pub fn laminar_mean_velocity(Double, Double, Double, Double) -> Double
+
+pub fn laminar_pressure_drop(Double, Double, Double, Double) -> Double
+
+pub fn laminar_velocity_profile(Double, Double, Double, Double, Double) -> Double
+
+pub fn lerp(Double, Double, Double) -> Double
+
+pub fn lift_force(Double, Double, Double, Double) -> Double
+
+pub fn linear_interpolate(Array[Double], Array[Double], Double) -> Double
+
+pub fn ln_approx(Double) -> Double
+
+pub fn local_head_loss(Double, Double, Double) -> Double
+
+pub fn local_head_loss_std(Double, Double) -> Double
+
+pub fn log10_approx(Double) -> Double
+
+pub fn mach_number(Double, Double) -> Double
+
+pub fn manning_flow_rate(Double, Double, Double, Double) -> Double
+
+pub fn manning_velocity(Double, Double, Double) -> Double
+
+pub fn mass_flow_rate(Double, Double) -> Double
+
+pub fn mass_flow_rate_av(Double, Double, Double) -> Double
+
+pub fn max(Double, Double) -> Double
+
+pub fn min(Double, Double) -> Double
+
+pub fn momentum_force(Double, Double, Double, Double) -> Double
+
+pub fn newton_method((Double) -> Double, (Double) -> Double, Double, Double) -> Double
+
+pub fn orifice_flow_rate(Double, Double, Double, Double) -> Double
+
+pub fn pow4(Double) -> Double
+
+pub fn pow_int(Double, Int) -> Double
+
+pub fn pressure_center_depth(Double, Double, Double) -> Double
+
+pub fn pressure_center_rect(Double, Double, Double) -> Double
+
+pub fn pressure_head(Double, Double, Double) -> Double
+
+pub fn rect_area(Double, Double) -> Double
+
+pub fn reynolds_dimensionless(Double, Double, Double, Double) -> Double
+
+pub fn reynolds_number(Double, Double, Double, Double) -> Double
+
+pub fn reynolds_number_hydraulic_diameter(Double, Double, Double, Double) -> Double
+
+pub fn reynolds_number_kinematic(Double, Double, Double) -> Double
+
+pub fn reynolds_similarity(Double, Double) -> Bool
+
+pub fn ring_area(Double, Double) -> Double
+
+pub fn root(Double, Int) -> Double
+
+pub fn safe_div(Double, Double, Double) -> Double
+
+pub fn sign(Double) -> Double
+
+pub fn sphere_drag_coefficient_stokes(Double) -> Double
+
+pub fn sphere_drag_stokes(Double, Double, Double) -> Double
+
+pub fn square(Double) -> Double
+
+pub fn sudden_contraction_loss_coefficient(Double, Double) -> Double
+
+pub fn sudden_expansion_loss_coefficient(Double, Double) -> Double
+
+pub fn total_head_loss(Double, Double) -> Double
+
+pub fn total_pressure_plane(Double, Double, Double, Double) -> Double
+
+pub fn total_pressure_plane_std(Double, Double, Double) -> Double
+
+pub fn trapezoid_area(Double, Double, Double) -> Double
+
+pub fn velocity_from_flow_rate(Double, Double) -> Double
+
+pub fn velocity_head(Double, Double) -> Double
+
+pub fn venturi_flow_rate(Double, Double, Double, Double, Double) -> Double
+
+pub fn volume_flow_rate(Double, Double) -> Double
+
+pub fn weber_number(Double, Double, Double, Double) -> Double
+
+pub fn weir_rectangular_flow(Double, Double, Double) -> Double
+
+pub fn weir_triangular_flow(Double, Double, Double) -> Double
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+
