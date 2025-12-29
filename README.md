@@ -422,5 +422,4 @@ The current version (0.1.0) implements **comprehensive fluid mechanics calculati
 * Dimensionless analysis (Weber, Euler numbers)
 * Mathematical utilities (power functions, logarithms)
 
-The library is actively developed and aims to provide comprehensive coverage of fluid mechanics while being optimized for MoonBit.#   M o o n F l u i d  
- 
+The library is actively developed and aims to provide comprehensive coverage of fluid mechanics while being optimized for MoonBit.
